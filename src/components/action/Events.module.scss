@@ -1,0 +1,552 @@
+.conteiner{
+
+    margin-bottom: 100px;
+    &_title{
+        margin-top: 128px;
+        font-family: Poppins;
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 75px;
+        letter-spacing: 0em;
+        color: #DBDFE4;
+        text-align: center;
+        margin-bottom: 40px;
+
+        animation: slide-in 1.3s ease-out forwards;
+    }
+    &_title_empty{
+        margin-top: 128px;
+    }
+  
+    @keyframes slide-in {
+        0% {
+          transform: translateY(-100%); 
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0); 
+        opacity: 1;
+
+        }
+      }
+    
+    &_navbar{
+        .list{
+            display: flex;
+            gap :4px;
+        }
+
+        &_item{
+            display: flex;
+            align-items: center;
+            
+            
+
+            .item_main{
+          
+
+                height: 682px;
+                width: 85px;
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 25px;
+
+                background: #162C4E;
+                margin-right: 2px;
+                position: relative;
+                border-bottom: 2px solid  #FF1E00;
+
+                .item_title{
+                    font-family: SF Pro Display;
+                    font-size: 32px;
+                    font-weight: 600;
+                    line-height: 32px;
+                    letter-spacing: 0em;
+                    color: #FFFFFF;
+                    writing-mode: tb-rl;
+                    transform: rotate(-180deg);
+                    
+                }
+                .item_numberItem{
+                    font-family: SF Pro Display;
+                    font-size: 40px;
+                    font-weight: 500;
+                    line-height: 40px;
+                    letter-spacing: -0.03em;
+                    color: #FFFFFF;
+                    margin-top: 40px;
+
+                 
+
+                }
+
+            }
+           
+
+            .item_descrip{
+              
+                position: relative;
+                z-index: 100;
+               
+
+                
+                &_option{
+                    position: absolute;
+                    height: 681px;
+                    width: 364px;
+                    background: rgba(18, 18, 18, 0.8);
+                    backdrop-filter: blur(20px);
+                    overflow: hidden;
+                    padding-left: 42px;
+                    border-bottom: 3px solid  #FF1E00;
+
+                    .option_tab_num{
+                        font-family: SF Pro Display;
+                        font-size: 380px;
+                        font-weight: 600;
+                        line-height: 380px;
+                        letter-spacing: -0.03em;
+                        left: -1px;
+                        position: relative;
+                        left: -145px;
+                        top:-45px;
+
+                    }
+                    .option_text{
+                        color: #FFFFFF;
+                        font-family: SF Pro Display;
+                        font-size: 24px;
+                        font-weight: 600;
+                        line-height: 29px;
+                        letter-spacing: 0em;
+                        text-align: left;
+
+                        margin-top: 70px;
+                        margin-bottom: 12px;
+                    }
+                    .option_date{
+                        
+                        font-family: SF Pro Display;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 27px;
+                        letter-spacing: 0em;
+                        color: rgba(255, 255, 255, 0.8);;
+
+
+                    }
+                    .option_button{
+                        font-family: SF Pro Display;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 22px;
+                        letter-spacing: 0.03em;
+                        text-align: center;
+                        padding: 20px;
+                        color: #FFFFFF;
+                        width:256px;
+                        border:2px solid #FFFFFF;
+                        border-left:9px solid #FFFFFF;
+                        margin-top: 45px;
+
+                    }
+              
+
+                }
+            }
+            .item_test{
+                position: absolute;
+            
+            }
+        }
+    }
+}
+
+.background{
+    position: absolute;
+    top: 1px;
+    opacity: 0.1;
+
+ 
+}
+
+.animation{
+    animation: slideIn 1.5s ease-in-out;
+}
+
+
+
+
+@keyframes slideIn {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+}
+
+@media (max-width:1600px){
+    .conteiner{
+
+        
+        &_navbar{
+            .list{
+                display: flex;
+                flex-direction: column;
+                gap :4px;
+            }
+            &_item{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                
+    
+                .item_main{
+              
+                    order: 2;
+                    width: 673px;
+                    height: 85px;
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 20px 25px;
+    
+                    background: #162C4E;
+                    margin-right: 2px;
+                    position: relative;
+                    gap: 25px;
+    
+                    .item_title{
+                        font-family: SF Pro Display;
+                        font-size: 24px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        letter-spacing: 0em;  
+                        color: #FFFFFF;
+                        writing-mode: lr-tb;
+                    
+                        transform: rotate(0deg);
+                        order: 2;
+                        
+                    }
+                    .item_numberItem{
+                        font-family: SF Pro Display;
+                        font-size: 32px;
+                        font-weight: 500;
+                        line-height: 32px;
+                        letter-spacing: -0.03em;
+                        
+                        
+                        color: #FFFFFF;
+                        order: 1;
+                        margin-top: 0px;
+                       
+                     
+    
+                    }
+    
+                }
+                .item_descrip{
+              
+                    position: relative;
+                    z-index: 100;
+                   order: 1;
+                    margin: 25px;
+    
+                    img{
+                        width: 688px;
+                        height: 460px;
+                    }
+                    &_option{
+                        position: absolute;
+                        height: 192px;
+                        width: 673px;
+                        background: rgba(18, 18, 18, 0.8);
+                        backdrop-filter: blur(20px);
+                        overflow: hidden;
+                        padding-left: 42px;
+                        bottom: 0px;
+                        left: 8px;
+
+                      
+                        .option_tab_num{
+                            position: absolute;
+                            left: 560px;
+                            top: -12px;
+                            font-family: SF Pro Display;
+                            font-size: 152px;
+                            font-weight: 600;
+                            line-height: 152px;
+                            letter-spacing: -0.03em;
+                      
+                          
+                            
+                        }
+                        .option_text{
+                            color: #FFFFFF;
+                            font-family: SF Pro Display;
+                            font-size: 18px;
+                            font-weight: 600;
+                            line-height: 22px;
+                            letter-spacing: 0em;
+                            margin-top: 25px;
+                            margin-bottom: 8px;
+                        }
+                        .option_date{
+                            
+                            font-family: SF Pro Display;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            letter-spacing: 0em;
+                            color: rgba(255, 255, 255, 0.8);
+    
+    
+                        }
+                        .option_button{
+                            font-family: SF Pro Display;
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 19px;
+                            letter-spacing: 0em;
+                            padding: 12px;
+                            color: #FFFFFF;
+                            width:169px;
+                            border:2px solid #FFFFFF;
+                            border-left:9px solid #FFFFFF;
+                            margin-top: 29px;
+    
+                        }
+                  
+    
+                    }
+                }
+                .limit{
+                    position: relative;
+                }
+                .item_test{
+                    position: absolute;
+                    left: 25px;
+                    top: 25px;
+                    img{
+                        width: 688px;
+                        height: 460px;
+                    }
+                }
+            }
+        }
+    }
+    .background{
+        width: 648px;
+    }
+    
+    .animation{
+        animation: slideIn 1s ease-in-out;
+    }
+    
+    
+    .item_test{
+        position: absolute;
+    
+    }
+    
+    @keyframes slideIn {
+        from {
+          transform: translateY(50%);
+        }
+        to {
+          transform: translateY(0%);
+        }
+    }
+
+}
+
+@media(max-width:740px){
+    .conteiner{
+
+        &_title{
+            font-family: Poppins;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 37px;
+            letter-spacing: 0em;
+
+
+        }
+        &_navbar{
+            .list{
+                display: flex;
+                flex-direction: column;
+                gap :4px;
+            }
+            &_item{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                position: relative;
+      
+         
+                
+    
+                .item_main{
+              
+                    order: 2;
+                    width: 310px;
+                    height: 65px;
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 20px;
+                    background: #162C4E;
+                    margin-right: 2px;
+                    position: relative;
+                    gap: 25px;
+                    
+    
+                    .item_title{
+                        font-family: SF Pro Display;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 18px;
+                        letter-spacing: 0em;
+                        
+                        
+                        color: #FFFFFF;
+                        writing-mode: lr-tb;
+                    
+                        transform: rotate(0deg);
+                        order: 2;
+                        
+                    }
+                    .item_numberItem{
+                        font-family: SF Pro Display;
+                        font-size: 24px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        letter-spacing: -0.03em;
+                                              
+                        
+                        
+                        color: #FFFFFF;
+                        order: 1;
+                        margin-top: 0px;
+                       
+                     
+    
+                    }
+    
+                }
+             
+                .item_descrip{
+              
+                    position: relative;
+                    z-index: 100;
+                    order: 1;
+                    margin: 25px;
+                    top:-144px;
+             
+    
+                    img{
+                       width: 310px;
+                       
+                    }
+                    &_option{
+                        position: absolute;
+                        height: 158px;
+                        width: 310px;
+                        background: rgba(18, 18, 18, 0.8);
+                        backdrop-filter: blur(20px);
+                        overflow: hidden;
+                       padding-left: 20px;
+                        bottom: 0px;
+                        left: 0px;
+    
+                      
+                        .option_tab_num{
+                            position: absolute;
+                            left: 250px;
+                            top: 0px;
+                            font-family: SF Pro Display;
+                            font-size: 80px;
+                            font-weight: 600;
+                            line-height: 80px;
+                            letter-spacing: -0.03em;
+                         
+                            
+                      
+                          
+                            
+                        }
+                        .option_text{
+                            color: #FFFFFF;
+                            font-family: SF Pro Display;
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 19px;
+                            letter-spacing: 0em;
+                  
+                            
+                            margin-top: 25px;
+                            margin-bottom: 8px;
+                        }
+                        .option_date{
+                            
+                            font-family: SF Pro Display;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 21px;
+                            letter-spacing: 0em;
+                        
+                            
+                            color: rgba(255, 255, 255, 0.8);
+    
+    
+                        }
+                        .option_button{
+                            font-family: SF Pro Display;
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 19px;
+                            letter-spacing: 0em;
+                            
+                            
+                            padding: 12px;
+                            color: #FFFFFF;
+                            width:169px;
+                            border:2px solid #FFFFFF;
+                            border-left:7px solid #FFFFFF;
+                            margin-top: 22px;
+    
+                        }
+                  
+    
+                    }
+                }
+                .limit{
+                    position: relative;
+                    height: 349px;
+
+                }
+                .item_test{
+                    position: absolute;
+                    top:-76px;
+                    img{
+                       width: 310px;
+                       height: 376px;
+                    }
+                }
+            }
+        }
+
+
+    }
+    .background{
+        width: 292px;
+        height: 64px;
+    }
+}
