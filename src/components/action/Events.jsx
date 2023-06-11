@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import img1 from "../../assets/img1.svg";
 import small1 from "../../assets/small.jpg";
 import small2 from "../../assets/small2.jpg";
@@ -14,9 +16,6 @@ import smallT3 from "../../assets/smallT3.jpg";
 import smallT4 from "../../assets/smallT4.jpg";
 
 import smallForMob from "../../assets/smallForMob.jpg";
-
-
-
 
 
 import style from "./Events.module.scss";
@@ -130,9 +129,11 @@ const Events = () => {
 
                       <div className={style.option_text}>{item.title}</div>
                       <div className={style.option_date}>13.02.2023</div>
+                      <Link to='https://egorovagency.by/#main'>
                       <div className={style.option_button}>
                         More information
                       </div>
+                      </Link>
                     </div>
 
                     <img src={item.image} alt="" />
